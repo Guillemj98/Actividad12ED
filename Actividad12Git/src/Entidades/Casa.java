@@ -100,5 +100,24 @@ public class Casa {
 
 		this.metrosCuadrados = totalMetrosCuadrados;
 	}
-
+	/**
+	 * El método de calcularPrecioCasaConIva calcula el precio 
+	 * de la casa con IVA. El IVA será del 5% si es de segunda mano
+	 * y del 10% si es nueva.
+	 * 
+	 * @return precioFinalCasa
+	 */
+	public double calcularPrecioCasaConIva() {
+		// Vamos a calcular el precio de la casa dependiendo 
+		// de si es de segunda mano o no sera diferente
+		double precioFinalCasa = 0;
+		if(this.esSegundaMano == true) {
+			precioFinalCasa = (this.precio * 0.05) + this.precio;
+		}
+		else {
+			precioFinalCasa = (this.precio * 0.10) + this.precio;
+		}
+		return precioFinalCasa;
+		
+	}
 }
