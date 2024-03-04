@@ -5,7 +5,19 @@ public class Direccion {
 	private String nombreVia;
 	private String localidad;
 	private String codigoPostal;
-	
+
+	public Direccion() {
+		super();
+	}
+
+	public Direccion(TipoVia tipoVia, String nombreVia, String localidad, String codigoPostal) {
+		super();
+		this.tipoVia = tipoVia;
+		this.nombreVia = nombreVia;
+		this.localidad = localidad;
+		this.codigoPostal = codigoPostal;
+	}
+
 	@Override
 	public String toString() {
 		return "Direccion [tipoVia=" + tipoVia + ", NombreVia=" + nombreVia + ", Localida=" + localidad
@@ -43,6 +55,5 @@ public class Direccion {
 	public void setCodigoPostal(String codigoPostal) {
 		this.codigoPostal = codigoPostal;
 	}
-	
-	
+
 }
