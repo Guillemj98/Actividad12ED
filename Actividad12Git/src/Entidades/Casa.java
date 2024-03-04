@@ -96,8 +96,10 @@ public class Casa {
 	
 	public void calculoMetrosCuadrados() {
 		int totalMetrosCuadrados = 0;
-		totalMetrosCuadrados += this.jardin.getMetrosCuadrados();
-
+		if (!(this.jardin == null)) {
+			totalMetrosCuadrados += this.jardin.getMetrosCuadrados();
+		}
+			
 		for (Habitacion h : habitaciones) {
 			totalMetrosCuadrados += h.getMetrosCuadrados();
 		}
