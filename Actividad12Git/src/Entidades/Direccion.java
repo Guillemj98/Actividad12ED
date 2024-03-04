@@ -25,7 +25,7 @@ public class Direccion {
 	}
 
 	public void setNombreVia(String nombreVia) {
-		nombreVia = nombreVia;
+		this.nombreVia = nombreVia;
 	}
 
 	public String getLocalidad() {
@@ -33,7 +33,7 @@ public class Direccion {
 	}
 
 	public void setLocalidad(String localidad) {
-		localidad = localidad;
+		this.localidad = localidad;
 	}
 
 	public String getCodigoPostal() {
@@ -41,7 +41,7 @@ public class Direccion {
 	}
 
 	public void setCodigoPostal(String codigoPostal) {
-		codigoPostal = codigoPostal;
+		this.codigoPostal = codigoPostal;
 	}
 	
 	
