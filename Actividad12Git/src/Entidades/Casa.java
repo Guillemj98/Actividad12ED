@@ -90,7 +90,8 @@ public class Casa {
 	 * 
 	 * @return void.
 	 */
-	public void calculoMetosCuadrados() {
+	
+	public void calculoMetrosCuadrados() {
 		int totalMetrosCuadrados = 0;
 		totalMetrosCuadrados += this.jardin.getMetrosCuadrados();
 
