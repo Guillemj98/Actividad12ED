@@ -2,14 +2,14 @@ package Entidades;
 
 public class Direccion {
 	private TipoVia tipoVia;
-	private String NombreVia;
-	private String Localida;
-	private String CodigoPostal;
+	private String nombreVia;
+	private String localidad;
+	private String codigoPostal;
 	
 	@Override
 	public String toString() {
-		return "Direccion [tipoVia=" + tipoVia + ", NombreVia=" + NombreVia + ", Localida=" + Localida
-				+ ", CodigoPostal=" + CodigoPostal + "]";
+		return "Direccion [tipoVia=" + tipoVia + ", NombreVia=" + nombreVia + ", Localida=" + localidad
+				+ ", CodigoPostal=" + codigoPostal + "]";
 	}
 
 	public TipoVia getTipoVia() {
@@ -21,27 +21,27 @@ public class Direccion {
 	}
 
 	public String getNombreVia() {
-		return NombreVia;
+		return nombreVia;
 	}
 
 	public void setNombreVia(String nombreVia) {
-		NombreVia = nombreVia;
+		nombreVia = nombreVia;
 	}
 
-	public String getLocalida() {
-		return Localida;
+	public String getLocalidad() {
+		return localidad;
 	}
 
-	public void setLocalida(String localida) {
-		Localida = localida;
+	public void setLocalidad(String localidad) {
+		localidad = localidad;
 	}
 
 	public String getCodigoPostal() {
-		return CodigoPostal;
+		return codigoPostal;
 	}
 
 	public void setCodigoPostal(String codigoPostal) {
-		CodigoPostal = codigoPostal;
+		codigoPostal = codigoPostal;
 	}
 	
 	

@@ -29,15 +29,18 @@ public class Casa {
 	}
 
 	// Métodos de la clase
+	
 	@Override
 	public String toString() {
-		return "Casa [precio=" + precio + ", esSegundaMano=" + esSegundaMano + ", metrosCuadrados=" + metrosCuadrados
-				+ ", jardin=" + jardin + "]";
+		return "Casa [direccion=" + direccion + ", precio=" + precio + ", esSegundaMano=" + esSegundaMano
+				+ ", metrosCuadrados=" + metrosCuadrados + ", jardin=" + jardin + ", habitaciones=" + habitaciones
+				+ "]";
 	}
 
 	public Direccion getDireccion() {
 		return direccion;
 	}
+
 
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
