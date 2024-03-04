@@ -83,4 +83,22 @@ public class Casa {
 		this.habitaciones = habitaciones;
 	}
 
+	/**
+	 * El método calculoMetrosCuadrados calcula el total de los metros cuadrados de
+	 * las diferentes estancias de la casa y asigna el cálculo total al atributo
+	 * precio de la clase Casa
+	 * 
+	 * @return void.
+	 */
+	public void calculoMetosCuadrados() {
+		int totalMetrosCuadrados = 0;
+		totalMetrosCuadrados += this.jardin.getMetrosCuadrados();
+
+		for (Habitacion h : habitaciones) {
+			totalMetrosCuadrados += h.getMetrosCuadrados();
+		}
+
+		this.metrosCuadrados = totalMetrosCuadrados;
+	}
+
 }
