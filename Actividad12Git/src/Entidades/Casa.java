@@ -101,5 +101,8 @@ public class Casa {
 
 		this.metrosCuadrados = totalMetrosCuadrados;
 	}
-
+	public boolean esChalet() {
+		return jardin != null;
+		
+	}
 }
